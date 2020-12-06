@@ -4,9 +4,10 @@ class Band extends Component {
 
   render() {
     return(
-      <div>
-        Band Component
-      </div>
+      <li>
+        Name: {this.props.name}
+        <button type='button' onClick={() => this.props.handleDelete(this.props.id)}>Delete Moi</button>
+      </li>
     );
   }
 };
